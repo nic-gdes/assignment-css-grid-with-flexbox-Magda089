@@ -15,27 +15,27 @@ html {
 
 .grid-container {
     display: grid;
+    grid-template-areas: 'one one '
+                         'two two ';
     height: 100vh;
     column-gap: 50px;
     gap: 10px;
     background-color: #2196F3;
     padding: 10px
-    /* grid-template-areas:
-    'main main main'
-    'main main main' ; */
     
-  
+   
+ 
   }
-  
   .grid-item1 {
-    background-color: rgb(173, 173, 173);
-    grid-area: auto / span 3;
+    grid-area: one;
+
   }
-  
   .grid-item2 {
-    background-color: rgb(158, 158, 158); 
-    grid-area: auto / span 3;
-}
+    grid-area: two;
+    
+  }
+
+
 header {
     background-color: none;
     margin: 0 auto;
@@ -60,7 +60,7 @@ nav a:hover,
 nav a:focus {
 color: #03460c;
  }
-h1 {
+header h1 {
     font-family: "Caveat", cursive;
     font-size: 2.5rem;
     color: #000000;
@@ -83,17 +83,19 @@ h1 {
     justify-content: space-between;
     align-items: center;
   }
-.hero.image {
+
+  
+  .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/sheri-tilton-remax.jpeg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+  }
+  
   .hero-text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
     text-align: center;
     position: absolute;
     top: 50%;
@@ -101,9 +103,8 @@ h1 {
     transform: translate(-50%, -50%);
     color: white;
   }
-
+  
   .hero-text button {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: none;
     outline: 0;
     display: inline-block;
@@ -115,10 +116,10 @@ h1 {
   }
   
   .hero-text button:hover {
-    background-color: #555;
+    background-color: #045815;
     color: white;
   }
   button {
-    border-radius: 105px;
-    margin-top: 10px;
+    border-radius: 15px;
+    margin-top: 8px;
   }
